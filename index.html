@@ -716,10 +716,10 @@ Telegram orqali yozish
 
 <div class="about-text">
 
-<h2>Ibrat Mebel haqida</h2>
+<h2>BUVAYDA IBRAT MEBEL haqida</h2>
 
 <p>
-Ibrat Mebel — Buvayda tumanida mebel ishlab chiqarish
+BUVAYDA IBRAT MEBEL — Buvayda tumanida mebel ishlab chiqarish
 va mebel servis xizmatlarini ko‘rsatuvchi korxona.
 </p>
 
@@ -748,7 +748,7 @@ aniq, sifatli va tezkor xizmat ko‘rsatishga harakat qilamiz.
 
 <div class="title">
 
-<span>IBRAT MEBEL SERVIS</span>
+<span>BUVAYDA IBRAT MEBEL SERVIS</span>
 
 <h2>Xizmatlarimiz</h2>
 
@@ -859,7 +859,7 @@ hisoblashda yordam beramiz.
 <h2>Mebellar katalogi</h2>
 
 <p>
-Ibrat Mebel tomonidan tayyorlanadigan ayrim
+buvayda Ibrat Mebel tomonidan tayyorlanadigan ayrim
 mebel yo‘nalishlari bilan tanishing.
 </p>
 
@@ -966,7 +966,7 @@ Buyurtma berish
 
 <span>NEGA BIZ?</span>
 
-<h2>Nega Ibrat Mebel?</h2>
+<h2>Nega BUVAYDA IBRAT MEBEL?</h2>
 
 </div>
 
@@ -1145,7 +1145,7 @@ placeholder="Buyurtma yoki savolingizni yozing">
 
 
 <button type="submit">
-WhatsApp orqali yuborish
+Telegram orqali yuborish
 </button>
 
 </form>
@@ -1161,21 +1161,21 @@ WhatsApp orqali yuborish
 <footer>
 
 <div>
-<strong>IBRAT MEBEL</strong>
+<strong>BUVAYDA IBRAT MEBEL</strong>
 </div>
 
 <div>
-© 2026 Ibrat Mebel. Barcha huquqlar himoyalangan.
+© 2026 Buvayda Ibrat Mebel. Barcha huquqlar himoyalangan.
 </div>
 
 </footer>
 
 
 <a
-href="https://wa.me/998958027755"
+href="https://t.me/ibratmebel8909"
 target="_blank"
 class="whatsapp">
-WhatsApp
+Telegram
 </a>
 
 
@@ -1199,19 +1199,21 @@ document.getElementById("customerMessage").value;
 
 
 let text =
-"Assalomu alaykum, Ibrat Mebel!" +
+"Assalomu alaykum, BUVAYDA IBRAT MEBEL!" +
 "\n\nIsm: " + name +
 "\nTelefon: " + phone +
 "\nXizmat: " + service +
 "\nIzoh: " + message;
 
 
-let url =
-"https://wa.me/998958027755?text=" +
-encodeURIComponent(text);
+navigator.clipboard.writeText(text);
+
+alert("Buyurtma matni nusxalandi. Telegram ochiladi — xabar oynasiga Paste qiling.");
+
+window.open("https://t.me/ibratmebel8909", "_blank");
 
 
-window.open(url,"_blank");
+
 
 }
 
