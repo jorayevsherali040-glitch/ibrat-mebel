@@ -1208,16 +1208,31 @@ let text =
 navigator.clipboard.writeText(text);
 
 alert("Buyurtma matni nusxalandi. Telegram ochiladi — xabar oynasiga Paste qiling.");
-
-window.open("https://t.me/ibratmebel8909", "_blank");
-
-
-
+ window.open("https://t.me/ibratmebel8909", "_blank");
 
 }
 
 </script>
 
+
+<!-- FIREBASE -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-analytics.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyBNQ_14GHXIa1s_8_480-e2NAEr7boZlKw",
+    authDomain: "buvayda-ibrat-mebel.firebaseapp.com",
+    projectId: "buvayda-ibrat-mebel",
+    storageBucket: "buvayda-ibrat-mebel.firebasestorage.app",
+    messagingSenderId: "630152385372",
+    appId: "1:630152385372:web:9ba8311493052009532799",
+    measurementId: "G-S6SCXCSE88"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 
 </body>
 </html>
